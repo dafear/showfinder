@@ -36,10 +36,11 @@ function displayMusicSearchData(musicVenues) {
   $('.js-search-results').empty()
   if (musicVenues) {
     musicVenues.forEach(function(item) {
+      var link = '<a target="_blank" href="' + item.url +'">'+ item.name +'</a>'; 
      resultElement += '<p>' + item.name + '</p>';
       resultElement += '<p>' + item.location.address + '</p>';
        resultElement += '<p>' + item.location.city + '</p>';
-      resultElement += '<p>' + item.url + '</p>';
+      resultElement += '<p>' + link + '</p>';
       
     });
   }
