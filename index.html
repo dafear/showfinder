@@ -21,10 +21,10 @@
     <div style="text-align: center">
 
       <label for="query"></label>
-      <input type="text" class="js-query" required="text"></input> <br>
-      <button id="trigger-overlay" type="submit">Search</button>
+      <input type="text" name="searchQuery" class="js-query" id="searchInput"></input> <br>
+      <input id="trigger-overlay" id="submitBtn" type="submit" class="enableOnInput" disabled="disabled"></input>
 
-      <input type="button" value="Refresh Page" onclick=" window.location.reload()"></input>
+     <!-- <input type="button" value="Refresh Page" onclick=" window.location.reload()"></input> -->
     </div>
   </form>
 
@@ -37,6 +37,7 @@
  </div>
   <script src="js/modernizr.custom.js"></script> 
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="js/trigger.js"></script>
   <script src="js/classie.js"></script> 
   <script src="js/dafear.js"></script>
   <script src="js/code7.js"></script> 
