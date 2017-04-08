@@ -1,5 +1,6 @@
 $(function () {
-                $('#searchInput').keyup(function () {
+        
+           $('#searchInput').keyup(function () {
                     if ($(this).val() == '') {
                         //Check to see if there is any text entered
                         // If there is no text within the input ten disable the button
@@ -10,3 +11,7 @@ $(function () {
                     }
                 });
             }); 
+
+
+
+

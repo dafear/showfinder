@@ -31,11 +31,12 @@ if ( 'classList' in document.documentElement ) {
   };
   addClass = function( elem, c ) {
     elem.classList.add( c );
-  };
+    };
   removeClass = function( elem, c ) {
-    elem.classList.remove( c );
-  };
-}
+   elem.classList.remove( c );
+    };
+    
+  }
 else {
   hasClass = function( elem, c ) {
     return classReg( c ).test( elem.className );
