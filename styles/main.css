@@ -85,13 +85,16 @@ input[type=submit]:enabled,
 button:enabled {
   color: white;
   background: #000000;
-  border: 0;
+  border: 20;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   cursor: pointer;
   margin-bottom: 0;
   height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  letter-spacing: 2px;
 
 }
 
@@ -99,13 +102,16 @@ input[type=submit]:disabled,
 button:disabled {
 color: white;
 background: #000000;
-border: 0;
+border: 20;
 font-weight: 500;
-font-size: 14px;
+font-size: 12px;
 text-align: center;
 cursor: pointer;
 margin-bottom: 0;
 height: auto;
+border-radius: 5px;
+padding: 5px;
+letter-spacing: 2px;
 }
   
 
