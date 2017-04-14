@@ -36,20 +36,35 @@ function displayMusicSearchData(musicVenues) {
   $('.js-search-results').empty()
   if (musicVenues.length >= 1) { 
     musicVenues.forEach(function(item) {
-      var link = '<a target="_blank" href="' + item.url +'">'+ item.name +'</a>'; 
-     resultElement += '<p>' + item.name + '</p>';
-      resultElement += '<p>' + item.location.address + '</p>';
-       resultElement += '<p>' + item.location.city + '</p>';
-      resultElement += '<p>' + link + '</p>';
+    console.log("my link is", item.url); 
+   var link;
+      if (item.url) {
+      link = '<a target="_blank" href="' + item.url +'">'+ item.name +'</a>'; 
+      } 
+    if(item.name) {
+      resultElement += '<p>' + item.name + '</p>';
+    }
+     if(item.location.address) {
+       resultElement += '<p>' + item.location.address + '</p>';
+     }
+     if(item.location.city) {
+      resultElement += '<p>' + item.location.city + '</p>';
+     }
       
+       if (item.url) {
+      resultElement += '<p>' + link + '</p>';
+      }
     });
+    
+    
   }
   else {
     resultElement += "<p>No results</p>";
+    
   }
   
-  $('.js-search-results').html(resultElement);
-}
+ $('.js-search-results').html(resultElement);
+};
 
 function watchSubmit() {
   $('.js-search-form').submit(function(e) {
